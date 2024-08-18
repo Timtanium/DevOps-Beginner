@@ -8,7 +8,7 @@
 
 - I **named** my instance and selected the **ubuntu** AMI.
 
-![alt text](<Screenshot (4).png>)
+![img 4](<Screenshot (4).png>)
 
 - I clicked the **create new key pair** button and generated a key pair for secure connection to my isntance.
 
