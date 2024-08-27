@@ -12,7 +12,7 @@
 
 - I clicked the **create new key pair** button and generated a key pair for secure connection to my isntance.
 
-![alt text](<Screenshot (6).png>)
+![6](Screenshot (6).png)
 
 - I entered a **Key pair name** and clicked on **create key pair**.
 
