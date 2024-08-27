@@ -160,7 +160,7 @@ I noticed the sign that says **Not secure**. Next, I'll use certbot to obtain th
 
 - I visited **`https://timtanium.name.ng`** to view my website.
 
-![21](img/Screenshot%20(21).png)
+![21](project-1/img/)
 
 ---
 ---
