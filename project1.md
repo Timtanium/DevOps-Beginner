@@ -8,11 +8,11 @@
 
 - I **named** my instance and selected the **ubuntu** AMI.
 
-![4](img/Screenshot (4).png)
+![4](img/Screenshot%20(4).png)
 
 - I clicked the **create new key pair** button and generated a key pair for secure connection to my isntance.
 
-![6](Screenshot (6).png)
+![6](img/Screenshot%20(6).png)
 
 - I entered a **Key pair name** and clicked on **create key pair**.
 
@@ -27,11 +27,9 @@ For security reasons, it's recommended to restrict SSH access to your IP address
 
 - I clicked on the **connect** button.
 
-![alt text](<Screenshot (7).png>)
+![7](img/Screenshot%20(7).png)
 
 - I copied the command provided under **SSH client**.
-
-![7]
 
 -I opened a terminal in the directory where my **.pem** file was ddownloaded, pasted the command and pressed enter.
 
@@ -64,11 +62,11 @@ The IP address for my instance has been updated to the elastic IP associated wit
 
 - I went back to my EC2 dashboard and copied my **Public IPv4 address**.
 
-![alt text](<Screenshot (10).png>)
+![10](img/Screenshot%20(10).png)
 
 - I visited my instances **Public IPv4 address** in a web browser to view the default Nginx startup page.
 
-![alt text](<Screenshot (11).png>)
+![11](img/Screenshot%20(11).png)
 
 - I downloaded my website template from my preferred website by navigating to the website, locating the template I want, and obtaining the download URL for the website.
 
@@ -101,10 +99,10 @@ I replaced **`<website template name>`** with the actual name of my website zip 
 
 - I restarted Nginx to apply the changes by running: **`sudo systemctl restart nginx`**.
 
-![alt text](<Screenshot (22).png>)
+![22](img/Screenshot%20(22).png)
 - I opened a web browser and went to my **Public IPv4 address/Elastic IP address** to confirm that my website is working as expected.
 
-![alt text](<Screenshot (13).png>)
+![13](img/Screenshot%20(13).png)
 
 ---
 
@@ -112,7 +110,7 @@ I replaced **`<website template name>`** with the actual name of my website zip 
 
 To make my website accessible via my domain name rather than the IP address, I needed to set up a DNS record. I did this by buying my domain from Qservers and then moving hosting to AWS Route 53, where I set up an A record.
 
-![alt text](<Screenshot (14).png>)
+![14](img/Screenshot%20(14).png)
 
 - On the website I clicked on **Domain List**.
 - I clicked on the **Manage** button.
@@ -128,10 +126,10 @@ To make my website accessible via my domain name rather than the IP address, I n
 
 - My A record has been created successfully.
 
-![alt text](<Screenshot (15)-1.png>)
-![alt text](<Screenshot (16).png>)
-![alt text](<Screenshot (17).png>)
-![alt text](<Screenshot (18).png>)
+![15](img/Screenshot%20(15)-1.png)
+![16](img/Screenshot%20(16).png)
+![17](img/Screenshot%20(17).png)
+![18](img/Screenshot%20(18).png)
 
 - I clicked on **create record** again, to create the record for my sub domain.
 - I put the Record name(**www➀**), pasted my **IP address➁**, and then clicked on **Create records➂**.
@@ -158,11 +156,11 @@ I noticed the sign that says **Not secure**. Next, I'll use certbot to obtain th
 - I executed the **`sudo certbot --nginx`** command to request my certificate. I followed the instructions provided by certbot and selected the domain name for which  like to activate HTTPS.
 - I verified the website's SSL using the OpenSSL utility with the command: **`openssl s_client -connect timtanium.name.ng:443`**
 
-![alt text](<Screenshot (20).png>)
+![20](img/Screenshot%20(20).png)
 
 - I visited **`https://timtanium.name.ng`** to view my website.
 
-![alt text](<Screenshot (21).png>)
+![21](img/Screenshot%20(21).png)
 
 ---
 ---
